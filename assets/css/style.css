@@ -1,0 +1,92 @@
+.container {
+  width  : 100%;
+  margin-top: 0px;
+}
+.bg-btn {
+  width  : 250px;
+  height : 70px;
+  margin: 0 auto;
+  background-color: white;
+  cursor : pointer;
+}
+.button1 {
+  margin: 25px 0;
+  border-radius: 50px;
+  /* ボックスの角につける丸みの強さを指定 */
+  width  : 250px;
+  height : 70px;
+  position: relative;
+  overflow: hidden;
+  transition-duration:1.3s;
+  /* アニメーションの開始から終了までの時間を指定 */
+  border-bottom: 1px solid pink;
+  border-top: 1px solid pink;
+  background-color: white;
+}
+.button1:hover {
+  /* hover後のエフェクト */
+  background-color: pink;
+  border: 1px solid pink;
+}
+.button2 {
+  margin: 25px 0;
+  border-radius: 50px;
+  /* ボックスの角につける丸みの強さを指定 */
+  width  : 250px;
+  height : 70px;
+  position: relative;
+  overflow: hidden;
+  transition-duration:1.3s;
+  /* アニメーションの開始から終了までの時間を指定 */
+  border-bottom: 1px solid palegreen;
+  border-top: 1px solid palegreen;
+  background-color: white;
+}
+.button2:hover {
+  background-color: palegreen;
+  border: 1px solid palegreen;
+}
+.button3 {
+  margin: 25px 0;
+  border-radius: 50px;
+  /* ボックスの角につける丸みの強さを指定 */
+  width  : 250px;
+  height : 70px;
+  position: relative;
+  overflow: hidden;
+  transition-duration:1.3s;
+  /* アニメーションの開始から終了までの時間を指定 */
+  border-bottom: 1px solid skyblue;
+  border-top: 1px solid skyblue;
+  background-color: white;
+}
+.button3:hover {
+  background-color: skyblue;
+  border: 1px solid skyblue;
+}
+.btn:hover .fonts h1 {
+  color: white;
+}
+.fonts {
+  width            : 250px;
+  height           : 70px;
+  padding          : 10px 0;
+  top : 0;
+  left: 0;
+  font-family : georgia;
+  color       : #fff;
+  opacity : 1;
+  transition : opacity .8s;
+  /* hover後カーソルを外した際に文字と背景が消える時間を指定 */
+}
+.fonts h1 {
+  font-size: 28px;
+  margin: 10px 0;
+  color: #888888;
+  transition-duration:2.5s;
+  /* アニメーションの開始から終了までの時間を指定 */
+}
+.btn .fonts {
+  position : absolute;
+  /* .button div(hover後に現れる文字と背景)の位置を指定 */
+}

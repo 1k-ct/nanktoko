@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>何か投稿サイト</title>
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+</head>
+
+<body>
+    <form method="post" action="/delete">
+        <p>削除ID<input type="text" name="db_delete_num" size="15" placeholder="入力してください"></p>
+        <p><input type="submit" value="削除"></p>
+    </form>
+    <form method="post" action="/creat">
+        <p>内容<input type="text" name="toko_text" size="30" placeholder="入力してください"></p>
+        <p>名前<input type="text" name="toko_user_name" size="15" placeholder="入力してください"></p>
+        <p><input type="submit" value="投稿"></p>
+    </form>
+    <ul>
+        {{ range .tokos }}
+        <li>ID：{{ .ID }}、名前：{{ .Name }}、投稿内容：{{ .Text }}
+        </li>
+        {{end}}
+    </ul>
+</body>
+
+</html>
